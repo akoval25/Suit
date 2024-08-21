@@ -17,10 +17,15 @@ a {
 }
 
 html, body {
-    margin: 0;
     height: 100%;
     cursor: none;
     overflow: hidden;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -132,6 +137,15 @@ h2 {
     width: 340px;
 }
 
+.leftsuit {
+    background-image: url('./img/Icon_01.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    width: 340px;
+}
+
 .rightbox {
     background-image: url('./img/Card.png');
     background-repeat: no-repeat, repeat;
@@ -139,6 +153,86 @@ h2 {
     background-position: center;
     height: 480px;
     width: 340px;
+}
+
+.rightsuit {
+    background-image: url('./img/Icon_02.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    height: 480px;
+    width: 340px;
+}
+
+.leftbox, .rightbox, .startlook, .makeup {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.btn {
+    display: none;
+    height: 200px;
+    width: 766px;
+    position: relative;
+    z-index: 10;
+    bottom: 870px;
+    left: 162px;
+    transition: opacity 0.5s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: #0056b3;
+    border-radius: 100px; 
+}
+
+.btn.pressed {
+    animation: pressEffect 0.2s ease-in-out;
+}
+
+@keyframes pressEffect {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: #0056b3;
+    }
+    50% {
+        transform: translateY(6px);
+        opacity: 0.9;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: #004494;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: #007bff;
+    }
+}
+
+.btn.show {
+    display: block;
+    opacity: 1;
+}
+
+.heart {
+    background-image: url('./img/Heart_vfx.png');
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    height: 142px;
+    width: 170px;
+    position: relative;
+    z-index: 8;
+    display: none;
+    animation: floatUp 5s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(-500px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px);
+        opacity: 1;
+    }
 }
 
 footer {
