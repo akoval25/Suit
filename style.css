@@ -38,6 +38,14 @@ body {
     margin: 0;
 }
 
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+    }
+}
+
 #custom-cursor {
     position: fixed;
     pointer-events: none;
@@ -51,7 +59,16 @@ header {
     background-position: center;
     width: 100%;
     height: 240px;
+}
 
+@media screen and (min-width: 1920px) {
+    header {
+        width: 830px;
+        height: 172px;
+        margin-top: 20px;
+        margin-left: 545px;
+        border-radius: 40px;
+    }
 }
 
 .header {
@@ -69,11 +86,23 @@ h1 {
     font-family: "Rubik Semi Bold", sans-serif;
 }
 
+@media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 58px;
+    }
+}
+
 h2 {
     color: #ffffff;
     font-size: 80px;
     font-family: "Rubik Bold", sans-serif; 
     margin: 0;
+}
+
+@media screen and (min-width: 1920px) {
+    h2 {
+        font-size: 70px;
+    }
 }
 
 .body {
@@ -82,6 +111,15 @@ h2 {
     background-repeat: no-repeat, repeat;
     background-size: cover;
     background-position: center;
+}
+
+@media screen and (min-width: 1920px) {
+    .body {
+        
+        height: 1055px;
+        background-size: contain;
+        margin-left: 3.9px;
+    }
 }
 
 .startlook {
@@ -93,6 +131,15 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 100%;
+}
+
+@media screen and (min-width: 1920px) {
+    .startlook {
+        background-image: url('./img/Look_0.png');
+        height: 888px;
+        background-size: contain;
+        padding-top: 172px;
+    }
 }
 
 .makeup {
@@ -108,6 +155,15 @@ h2 {
     bottom: 480px;
 }
 
+@media screen and (min-width: 1920px) {
+    .makeup {
+        height: 163px;
+        width: 149px;
+        background-size: contain;
+        bottom: 416px;
+    }
+}
+
 .selectboxes {
     height: 480px;
     width: 980px;
@@ -117,6 +173,14 @@ h2 {
     bottom: 1005px;
     padding: 0 50px;
     justify-content: space-between;
+}
+
+@media screen and (min-width: 1920px) {
+    .selectboxes {
+        width: 1310px;
+        padding: 0 305px;
+        bottom: 870px;
+    }
 }
 
 .leftbox {
@@ -181,6 +245,21 @@ h2 {
     border-radius: 100px; 
 }
 
+@media screen and (min-width: 1920px) {
+    .btn img {
+        width: 666px;
+        height: 174px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .btn{
+        width: 666px;
+        height: 174px;
+        left: 627px;
+    }
+}
+
 .btn.pressed {
     animation: pressEffect 0.2s ease-in-out;
 }
@@ -243,13 +322,40 @@ footer {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0 50px;
+}
+
+@media screen and (min-width: 1920px) {
+    footer {
+        height: 170px;
+        background-image: none;
+        position: relative;
+        z-index: 6;
+        bottom: 380px;
+        left: 0;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .links a {
     display: inline-block;
     transition: transform 0.1s ease;
+}
+
+@media screen and (min-width: 1920px) {
+    .links a img {
+        height: 67px;
+        width: 225px;
+    }
 }
 
 .links a:active {
@@ -260,8 +366,17 @@ footer {
     margin-right: 50px;
 }
 
+
+
 .app {
     margin-right: 22px;
+}
+
+@media screen and (min-width: 1920px) {
+    .app {
+        margin: 0 0 10px 0;
+        
+    }
 }
 
 
